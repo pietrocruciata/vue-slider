@@ -30,24 +30,26 @@ createApp({
         };
     },
 
+
     methods: {
         prev() {
+
             this.currentimg--
             if (this.currentimg < 0) {
                 this.currentimg = 4
             }
-            
+
         },
         next() {
             this.currentimg++
             if (this.currentimg > 4) {
                 this.currentimg = 0
             }
-           
+
 
         }
     }
-   
+
 
 
 

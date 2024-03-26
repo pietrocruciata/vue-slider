@@ -16,7 +16,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item" >
+                <div class="item">
                     <img :src="slides[currentimg].image" alt="" />
 
                     <div class="text">
@@ -28,17 +28,18 @@
                 </div>
 
                 <div class="thumbs">
-                  
+
                     <div class="prev" @click="prev()"></div>
                     <div class="next" @click="next()"></div>
-                   
-                    
-                    
-                    
-                    <div class="thumb active">
-                        <img src="img/01.webp" alt="Svezia" />
+
+
+
+
+                    <div class="thumb" @click="currentimg = i" :class="i === currentimg ? 'active' : ''"
+                        v-for="(current, i) in slides">
+                        <img :src="current.image" alt="Svezia" />
                     </div>
-                    <div class="thumb">
+                    <!-- <div class="thumb ">
                         <img src="img/02.webp" alt="Ratchet & Clank" />
                     </div>
                     <div class="thumb">
@@ -49,7 +50,7 @@
                     </div>
                     <div class="thumb">
                         <img src="img/05.webp" alt="Avengers" />
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

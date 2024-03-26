@@ -42,6 +42,7 @@
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .thumb img {
@@ -55,7 +56,8 @@
     opacity: 1;
 }
 
-.prev, .next {
+.prev,
+.next {
     width: 20px;
     height: 20px;
     margin: 10px 0;
