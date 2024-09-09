@@ -1,3 +1,4 @@
+
 const { createApp } = Vue
 
 createApp({
@@ -41,14 +42,16 @@ createApp({
 
         },
         next() {
+
             this.currentimg++
             if (this.currentimg > 4) {
                 this.currentimg = 0
             }
+        },
+
+    },
 
 
-        }
-    }
 
 
 
